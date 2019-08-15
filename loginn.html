@@ -1,0 +1,67 @@
+<html>
+<head>
+<title> Login form</title>   
+<script type="text/javascript">
+      
+      function validate()
+      {
+         if( document.form2.t6.value == "" )
+         {
+            alert( "Please provide your name!" );
+            document.form2.t6.focus() ;
+            return false;
+         }
+      
+         if( document.form2.t7.value == "" )
+         {
+            alert( "Please provide your Password!" );
+            document.form2.t7.focus() ;
+            return false;
+         }
+         
+         return( true );
+      }
+</script>
+</head>
+<center>
+<body background="images/pic20.jpg">
+<section class="container">
+<br><br><br><br><br><br>
+<fieldset
+style="width:400px;background-color:brown"> 
+<h1><u>login form</u></h1>
+<form  name="form2" action="Login" method="post" onsubmit="return(validate());">
+<p><input type="text" name="t6" value=""placeholder="email"></p>
+<p><input type="password" name="t7" value=""placeholder="password"></p>
+<p class="change password">
+<label>
+<input type="checkbox" name="change password" id="Remember me:">Remember me</label>
+</p>
+<p class="submit"><input type="submit" name="commit" value="login"></p>
+<h2>Don't have a account !!! </h2><a href="signup.html" target=""><u> Sign up </u></a><p>!! It's free !!!!</p>
+</form>
+</section>
+</fieldset>
+</body>
+</center>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+
+<h2 style="color:WHITE">TWITTER.... <a href="http://www.twitter.com"><img src="images/twitter.jpg"align="bottom" height="30" width="30"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+FACEBOOK....<a href="http://www.facebook.com"><img src="images/fb.png"align="bottom" height="30" width="30"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+LINKEDIN....<a href="http://www.linkedin.com"><img src="images/linkedin.png"align="bottom" height="30" width="30"></h2></a>
+</html>

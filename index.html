@@ -1,0 +1,89 @@
+<head>
+<title>
+Institute Management System 
+</title>
+    <style>
+        .container{
+            position:relative;
+            width:100%;
+            height:300px;
+            border-radius:5px;
+            border:1px solid red;
+            overflow:hidden;
+        }
+    </style>
+<link rel="stylesheet" type="text/css" href="mystyle.html">
+<body background="images/pic6.jpg">
+
+<div id="fixedheader">
+
+  <center><font color=white  size="8">INSTITUTE MANAGEMENT SYSTEM</font></center>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+  <a href="student_login.html"><left><font color="black">student</left></font></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="teacher_login.html"><left><font color="black">Teacher</left></font></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <a href="staff_login.html"><left><font color="black">Staff</left></font></a>   
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <a href="library_login.html"><left><font color="black">Library</left></font></a>   
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <a href="management_login.html"><left><font color="black">Management</left></font></a>   
+</div>
+
+
+
+ <p>&nbsp</p>
+<h1><marquee behavior="alternate"><marquee width="500">INSTITUTE MANAGEMENT SYSTEM</marquee></marquee></h1>
+
+ 
+<div id="imgGallary" class="container">
+    <img src="images/library.jpg" alt="" width="100%" height="300" />
+    <img src="images/teacher_login.jpg" alt="" width="100%" height="300" />
+    <img src="images/teacher.jpg" alt="" width="100%" height="300" />
+    <img src="images/student_login.jpg" alt="" width="100%" height="300" />
+    <img src="images/management.jpg" alt="" width="100%" height="300" />
+</div>
+<script>
+(function(){
+        var imgLen = document.getElementById('imgGallary');
+        var images = imgLen.getElementsByTagName('img');
+        var counter = 1;
+
+        if(counter <= images.length){
+            setInterval(function(){
+                images[0].src = images[counter].src;
+                console.log(images[counter].src);
+                counter++;
+
+                if(counter === images.length){
+                    counter = 1;
+                }
+            },4000);
+        }
+})();
+</script>
+
+<div id="fixedfooter">
+<a href="index.html">Home</a> | <a href="mainpage.html">Login
+			</a> | <a href="management_login.html">signup_Management</a> | <a href="Aboutus.html">About
+				Us</a> | <a href="Contactus.html">Contact Us</a><br />  Copyright INSTITUTE 2016
+			<a href="Aboutus.html"><strong>other info</strong></a> |
+			Designed by <a href="Contactus.html" target="_parent"
+				title="free css templates"> OUR TEAM</a>
+</div>
+</body>
+</head>

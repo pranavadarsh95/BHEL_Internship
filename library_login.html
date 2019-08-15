@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>LIBRARY DEPARTMENT LOGIN</title>   
+<script type="text/javascript">
+      
+      function validate()
+      {
+         if( document.form2.t6.value == "" )
+         {
+            alert( "Please provide your name!" );
+            document.form2.t6.focus() ;
+            return false;
+         }
+      
+         if( document.form2.t7.value == "" )
+         {
+            alert( "Please provide your Password!" );
+            document.form2.t7.focus() ;
+            return false;
+         }
+         
+          if(document.form2.t6.value == "pranav"&&document.form2.t7.value == "adarsh")
+         {  
+         return( true );
+         }
+         else
+         {
+          alert("incorrect management id or management password!!!please check");
+          return false;
+         }    
+               }
+</script>
+</head>
+<center>
+<body>
+<img src="images/library.jpg"align="left" height="550" width="450"><br></br>
+<section class="container">
+<br><br><br><br><br><br>
+<fieldset
+style="width:400px;background-color:grey"> 
+<h1><u>LIBRARY DEPARTMENT</u></h1>
+<form  name="form2" action="Data3" onsubmit="return(validate());">
+<p><input type="text" name="t6" value=""placeholder="librarian id"></p>
+<p><input type="password" name="t7" value=""placeholder="librarian password"></p>
+<p class="submit"><input type="submit"  value="login"></p>
+</form>
+</section>
+</fieldset>
+</body>
+</center>
+<p>
+&nbsp;
+</p>
+<p>
+&nbsp;
+</p>
+<font color="grey"><marquee direction="left" style="background:black">!!!you can also read online its free 24*7!!!</marquee></font>
+</html>

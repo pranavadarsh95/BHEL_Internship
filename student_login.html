@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>student Login form</title>  
+ 
+<script type="text/javascript">
+      
+      function validate()
+      {
+         if( document.form2.t6.value == "" )
+         {
+            alert( "Please provide student id!" );
+            document.form2.t6.focus() ;
+            return false;
+         }
+      
+         if( document.form2.t7.value == "" )
+         {
+            alert( "Please provide student password!" );
+            document.form2.t7.focus() ;
+            return false;
+         }
+         
+         return( true );
+      }
+</script>
+</head>
+<center>
+<body>
+<img src="images/student_login.jpg"align="left" height="550" width="450"><br></br>
+<section class="container">
+<br><br><br><br><br><br>
+<fieldset
+style="width:400px;background-color:brown"> 
+<h1><u>STUDENT LOGIN</u></h1>
+<form  name="form2" action="Data" onsubmit="return(validate());">
+<p><input type="text" name="t6" value=""placeholder="student id"></p>
+<p><input type="password" name="t7" value=""placeholder="student password"></p>
+<label>
+<input type="submit" value="login">
+</form>
+</section>
+</fieldset>
+</body>
+</center>
+<p>
+&nbsp;
+</p>
+<p>
+&nbsp;
+</p>
+<font color="white"><marquee direction="left" style="background:RED">FORGET PASSWORD CONTACT INSTITUATE MANAGEMENT</marquee></font>
+</html>

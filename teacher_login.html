@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Teacher Login form</title>   
+<script type="text/javascript">
+      
+      function validate()
+      {
+         if( document.form2.t6.value == "" )
+         {
+            alert( "Please provide your name!" );
+            document.form2.t6.focus() ;
+            return false;
+         }
+      
+         if( document.form2.t7.value == "" )
+         {
+            alert( "Please provide your Password!" );
+            document.form2.t7.focus() ;
+            return false;
+         }
+         
+         return( true );
+      }
+</script>
+</head>
+<center>
+<body>
+<img src="images/teacher_login.jpg"align="left" height="500" width="450"><br></br>
+<section class="container">
+<br><br><br><br><br><br>
+<fieldset
+style="width:400px;background-color:green"> 
+<h1><u>TEACHER LOGIN</u></h1>
+<form  name="form2" action="Data2" onsubmit="return(validate());">
+<p><input type="text" name="t6" value=""placeholder="teacher id"></p>
+<p><input type="password" name="t7" value=""placeholder="teacher password"></p>
+<input type="submit" value="login">
+</form>
+</section>
+</fieldset>
+</body>
+</center>
+<p>
+&nbsp;
+</p>
+<p>
+&nbsp;
+</p>
+<font color="white"><marquee direction="left" style="background:black">FORGET PASSWORD CONTACT INSTITUATE MANAGEMENT</marquee></font>
+</html>
